@@ -21,7 +21,7 @@ export function MarketplacePage() {
   return (
     <>
       <Header searchQuery={searchQuery} onSearchChange={setSearchQuery} />
-      
+
       <div className="flex flex-col lg:flex-row gap-8 px-4 md:px-8 py-8 max-w-[1600px] mx-auto">
         {/* Main Content Area */}
         <div className="flex-1">
@@ -38,9 +38,9 @@ export function MarketplacePage() {
             <div className="text-center py-16">
               <div className="bg-white rounded-xl shadow-lg p-8 max-w-md mx-auto">
                 <p className="text-gray-500 text-lg">
-                  No crops found matching <span className="font-semibold text-gray-900">"{searchQuery}"</span>
+                  Walang nakitang tanim na tumutugma sa <span className="font-semibold text-gray-900">"{searchQuery}"</span>
                 </p>
-                <p className="text-gray-400 text-sm mt-2">Try a different search term.</p>
+                <p className="text-gray-400 text-sm mt-2">Subukan ang ibang salita.</p>
               </div>
             </div>
           )}

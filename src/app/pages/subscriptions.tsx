@@ -92,8 +92,8 @@ export function SubscriptionsPage() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 tracking-tight">My Subscriptions</h1>
-          <p className="text-gray-600 text-base md:text-lg">Manage your active crop subscriptions and delivery schedules</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 tracking-tight">Aking Subscriptions</h1>
+          <p className="text-gray-600 text-base md:text-lg">Pamahalaan ang iyong mga aktibong subscription at iskedyul ng delivery</p>
         </div>
 
         {/* Subscriptions List */}
@@ -125,7 +125,7 @@ export function SubscriptionsPage() {
                         ? 'bg-green-100 text-green-700'
                         : 'bg-gray-100 text-gray-700'
                         }`}>
-                        {subscription.status === 'active' ? 'Active' : 'Paused'}
+                        {subscription.status === 'active' ? 'Aktibo' : 'Nakahinto'}
                       </div>
                     </div>
 
@@ -134,19 +134,19 @@ export function SubscriptionsPage() {
                       <div className="flex items-center gap-2">
                         <Package className="w-4 h-4 text-gray-500" />
                         <div>
-                          <p className="text-xs text-gray-500">Quantity</p>
+                          <p className="text-xs text-gray-500">Dami</p>
                           <p className="text-sm font-medium text-gray-900">{subscription.quantityPerDelivery}kg / delivery</p>
                         </div>
                       </div>
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4 text-gray-500" />
                         <div>
-                          <p className="text-xs text-gray-500">Frequency</p>
+                          <p className="text-xs text-gray-500">Dalas</p>
                           <p className="text-sm font-medium text-gray-900">{subscription.frequency}</p>
                         </div>
                       </div>
                       <div>
-                        <p className="text-xs text-gray-500">Next Delivery</p>
+                        <p className="text-xs text-gray-500">Susunod na Delivery</p>
                         <p className="text-sm font-medium text-gray-900">{subscription.nextDelivery}</p>
                       </div>
                     </div>
@@ -167,12 +167,12 @@ export function SubscriptionsPage() {
                         {subscription.status === 'active' ? (
                           <>
                             <Pause className="w-4 h-4" />
-                            Pause
+                            I-hinto
                           </>
                         ) : (
                           <>
                             <Play className="w-4 h-4" />
-                            Resume
+                            Ituloy
                           </>
                         )}
                       </Button>
@@ -182,7 +182,7 @@ export function SubscriptionsPage() {
                         className="flex items-center justify-center gap-2 text-red-600 hover:text-red-700 hover:bg-red-50"
                       >
                         <X className="w-4 h-4" />
-                        Cancel
+                        Kanselahin
                       </Button>
                     </div>
                   </div>
@@ -193,8 +193,8 @@ export function SubscriptionsPage() {
         ) : (
           <Card className="p-8 md:p-12 text-center rounded-xl border-0 shadow-lg">
             <Package className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">No Active Subscriptions</h3>
-            <p className="text-gray-600 mb-6">Start subscribing to fresh crops from local farmers</p>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Walang Aktibong Subscriptions</h3>
+            <p className="text-gray-600 mb-6">Magsimulang mag-subscribe sa mga sariwang tanim mula sa mga lokal na magsasaka</p>
             <Button
               onClick={() => navigate('/')}
               className="text-white font-medium rounded-xl shadow-md transition-transform hover:scale-105"
@@ -202,7 +202,7 @@ export function SubscriptionsPage() {
                 background: 'linear-gradient(135deg, #fb923c 0%, #f97316 100%)',
               }}
             >
-              Browse Marketplace
+              Tingnan ang Marketplace
             </Button>
           </Card>
         )}

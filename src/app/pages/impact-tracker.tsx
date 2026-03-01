@@ -24,31 +24,31 @@ const co2Data = [
 const impactStats = [
   {
     icon: Users,
-    label: 'Farmers Supported',
+    label: 'Nasuportahang Magsasaka',
     value: '32',
-    change: '+8 this month',
+    change: '+8 ngayong buwan',
     color: 'text-blue-600',
     bgColor: 'bg-blue-100',
   },
   {
     icon: TrendingUp,
-    label: 'Total Revenue to Farmers',
+    label: 'Kabuuang Kita ng mga Magsasaka',
     value: '₱108,500',
-    change: '+24% from last month',
+    change: '+24% mula noong nakaraang buwan',
     color: 'text-green-600',
     bgColor: 'bg-green-100',
   },
   {
     icon: Leaf,
-    label: 'CO₂ Emissions Saved',
+    label: 'CO₂ na Naipon',
     value: '540 kg',
-    change: 'vs. traditional supply chain',
+    change: 'laban sa traditional supply chain',
     color: 'text-emerald-600',
     bgColor: 'bg-emerald-100',
   },
   {
     icon: Heart,
-    label: 'Community Impact Score',
+    label: 'Iskor ng Epekto sa Komunidad',
     value: '94/100',
     change: 'Excellent rating',
     color: 'text-pink-600',
@@ -62,8 +62,8 @@ export function ImpactTrackerPage() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 tracking-tight">Impact Tracker</h1>
-          <p className="text-gray-600 text-base md:text-lg">See how your subscriptions support local farmers and the environment</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 tracking-tight">Epektong Tracker</h1>
+          <p className="text-gray-600 text-base md:text-lg">Tingnan kung paano nakakatulong ang iyong subscriptions sa mga lokal na magsasaka at sa kapaligiran</p>
         </div>
 
         {/* Stats Grid */}
@@ -87,34 +87,34 @@ export function ImpactTrackerPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
           {/* Farmers & Revenue Chart */}
           <Card className="p-4 md:p-6 rounded-xl border-0 shadow-lg">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 md:mb-6">Farmers Supported Over Time</h3>
+            <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 md:mb-6">Dami ng Nasuportahang Magsasaka</h3>
             <ResponsiveContainer width="100%" height={250}>
               <AreaChart data={monthlyImpactData}>
                 <defs>
                   <linearGradient id="colorFarmers" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#1a3d2e" stopOpacity={0.3}/>
-                    <stop offset="95%" stopColor="#1a3d2e" stopOpacity={0}/>
+                    <stop offset="5%" stopColor="#1a3d2e" stopOpacity={0.3} />
+                    <stop offset="95%" stopColor="#1a3d2e" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
                 <XAxis dataKey="month" stroke="#6b7280" style={{ fontSize: '12px' }} />
                 <YAxis stroke="#6b7280" style={{ fontSize: '12px' }} />
-                <Tooltip 
-                  contentStyle={{ 
-                    backgroundColor: 'white', 
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: 'white',
                     border: '1px solid #e5e7eb',
                     borderRadius: '8px',
                     boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
                     fontSize: '14px'
                   }}
                 />
-                <Area 
-                  type="monotone" 
-                  dataKey="farmers" 
-                  stroke="#1a3d2e" 
+                <Area
+                  type="monotone"
+                  dataKey="farmers"
+                  stroke="#1a3d2e"
                   strokeWidth={2}
-                  fillOpacity={1} 
-                  fill="url(#colorFarmers)" 
+                  fillOpacity={1}
+                  fill="url(#colorFarmers)"
                 />
               </AreaChart>
             </ResponsiveContainer>
@@ -128,9 +128,9 @@ export function ImpactTrackerPage() {
                 <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
                 <XAxis dataKey="month" stroke="#6b7280" style={{ fontSize: '12px' }} />
                 <YAxis stroke="#6b7280" style={{ fontSize: '12px' }} />
-                <Tooltip 
-                  contentStyle={{ 
-                    backgroundColor: 'white', 
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: 'white',
                     border: '1px solid #e5e7eb',
                     borderRadius: '8px',
                     boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
@@ -145,7 +145,7 @@ export function ImpactTrackerPage() {
 
         {/* Community Stories */}
         <Card className="p-6 md:p-8 rounded-xl border-0 shadow-lg">
-          <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 md:mb-6">Farmer Stories</h3>
+          <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 md:mb-6">Mga Kuwento ng mga Magsasaka</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {/* Story 1 */}
             <div className="flex gap-3 md:gap-4">

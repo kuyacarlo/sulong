@@ -6,9 +6,9 @@ export function SidebarNav() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { id: 'marketplace', label: 'Marketplace', icon: ShoppingBag, path: '/' },
-    { id: 'subscriptions', label: 'My Subscriptions', icon: Package, path: '/subscriptions' },
-    { id: 'impact', label: 'Impact Tracker', icon: TrendingUp, path: '/impact' },
+    { id: 'marketplace', label: 'Pamilihan', icon: ShoppingBag, path: '/' },
+    { id: 'subscriptions', label: 'Aking Subscriptions', icon: Package, path: '/subscriptions' },
+    { id: 'impact', label: 'Aking Epekto', icon: TrendingUp, path: '/impact' },
   ];
 
   return (

@@ -50,7 +50,7 @@ export function CropCard({ crop, onSubscribe }: CropCardProps) {
             background: 'linear-gradient(135deg, #fb923c 0%, #f97316 100%)',
           }}
         >
-          Subscribe
+          Mag-subscribe
         </Button>
       </div>
     </Card>
